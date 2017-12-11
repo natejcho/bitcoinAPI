@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class WekaController {
 
-    @Autowired
-    LinearRegressionService lrs;
+    LinearRegressionService lrs = new LinearRegressionService();
 
     @RequestMapping("/evaluate")
     public String evaluate() throws Exception {
